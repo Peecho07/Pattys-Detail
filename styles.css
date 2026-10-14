@@ -356,3 +356,8 @@ img { color: transparent; }
 @media (min-width: 1080px) { .menu-btn { display: none; } }
 .pkg ul { align-content: start; }
 @media (max-width: 560px) { .trustbar .container { grid-template-columns: 1fr; gap: 1rem; } }
+
+/* Demo ribbon: marks this build as a preview, not the live site */
+.demo-ribbon { position: fixed; top: 2.1rem; right: -3.4rem; z-index: 250; width: 14rem; padding: .45rem 0; transform: rotate(45deg); background: #FFC400; color: #0B0B0D; font-family: var(--font-head); font-size: .85rem; font-weight: 700; letter-spacing: .18em; text-align: center; text-transform: uppercase; box-shadow: 0 4px 12px rgba(0,0,0,.35); pointer-events: none; }
+@media (max-width: 640px) { .demo-ribbon { top: 1.15rem; right: -3.3rem; width: 10.5rem; font-size: .62rem; letter-spacing: .14em; padding: .2rem 0; } }
+@media print { .demo-ribbon { position: absolute; } }
